@@ -1,0 +1,334 @@
+
+.GlavniKontejner
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(119, 206, 247);
+    height: 4000px;  
+    background-image: url("img.jpg");
+    background-repeat: no-repeat;
+    background-position-y: 1250px;  
+    background-size:contain;
+       
+}
+.DivSlike
+{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content:space-around;
+    background-color:rgb(176, 240, 243)
+}
+@media  only screen and (max-width: 400px)
+{
+    .DivSlike
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+    }
+    
+}
+.Slika3
+{
+    width: 100%;
+    height: auto;
+}
+.Slika1
+{
+    width: 30%;
+    height: 80%;
+    /*margin-left:auto;*/
+    margin-bottom:  30px;
+    border: 6px solid rgb(219, 195, 221);
+    border-radius: 10px;
+    -webkit-box-reflect: above 0px linear-gradient(to top, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+.Slika2
+{
+   width: 30%;
+   height: auto;
+  /* margin-right:auto; */
+   border-radius: 10px;
+   margin-bottom:  115px;
+   border: 6px solid #ddd;
+   -webkit-box-reflect: above 0px linear-gradient(to top, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+.Slika2:hover, .Slika4:hover, .Slika1:hover
+{
+    transform: scaleX(-1);
+}
+.Slika4
+{
+    width: 30%;
+    height: 350px;
+    border-radius: 10px;
+    border: 6px solid #ddd;
+    -webkit-box-reflect: above 0px linear-gradient(to top, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+table, tr, th, td
+{
+    border: 2px solid rgb(207, 15, 111);
+}
+table
+{
+    border-collapse: collapse;
+    
+}
+.listaDestinacija
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 60%;
+    padding: 10px; 
+    
+}
+.tabelaDest
+{
+    background-color:rgb(236, 178, 214);
+   
+}
+
+.listaDestinacijaBtn
+{
+    display: flex;
+    width: 35%;
+    margin-left: 10px;
+  
+   
+}
+@media  only screen and (max-width: 320px)
+{
+    .trDest,.trDest1 {
+        display: flex;
+        flex-wrap: wrap;
+         background-color: rgb(240, 248, 205);
+         flex-direction: column;
+    }
+
+    .trDest1
+    {
+        background-color: rgb(236, 154, 198);
+    }
+}
+.FormaZaRezervaciju
+{
+    display: flex;
+   
+    flex-direction: row;
+    flex-wrap: wrap;
+     
+    /*background-color: rgb(165, 230, 224); */
+}
+.DivVakcina
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid rgb(196, 63, 167);
+    padding: 10px;
+
+    background-color: rgb(253, 222, 253);
+}
+.LblVakcina
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.DivDoza
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.LabeleDoza, .CheckboxDoza
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.CheckboxDoza
+{
+    order: -1;
+}
+.DesniLevi
+{
+    display: flex;
+    flex-direction: row;
+    
+    border: 2px solid rgb(196, 63, 167);
+    padding: 10px;
+    flex-wrap: wrap;
+
+    background-color: rgb(253, 222, 253);
+}
+.DivLevi
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    background-color: rgb(253, 222, 253);
+}
+
+.DivDesni
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+@media only screen and (max-width: 986px)
+{
+    .DesniLevi {
+      
+         background-color: rgb(252, 248, 197);
+    }
+}
+.LabeleLevo
+{
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;
+    
+}
+.TextLevo
+{
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;
+}
+.LabeleDesno
+{
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    
+}   
+.TextDesno
+{
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    
+}
+.BrojDanaText, .BrDana
+{
+    display: flex;
+    flex-direction: column; 
+    margin-top: 22px;
+}
+.DugmeRezervisi
+{
+    margin-top: 100px;
+}
+.LabeleVakcina
+{
+    display: flex;
+    flex-direction: column; 
+}
+.SveRezervacije
+{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 40px;
+    /*background-color: rgb(119, 206, 247); */
+    
+ 
+}
+@media only screen and (max-width: 800px)
+{
+    .trPodaci,.Red {
+        display: flex;
+        flex-wrap: wrap;
+       flex-direction: column
+    }
+}
+.trPodaci
+{
+    
+    background-color: rgb(236, 178, 214);
+}
+.Red
+{
+    
+    background-color: rgb(237, 243, 179);
+}
+.VakcinaText
+{
+    
+    width: 10%;
+}
+
+
+.NazivAgencije
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.lblAgencija
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 40px;
+    font-style: italic;
+    font-size: 50px;
+    background-image: url("putovanje.png"); 
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    
+}
+.btnRezrvDest
+{
+    background-color: rgb(221, 72, 117);
+    color: rgb(98, 216, 216);
+    border-radius: 6px;
+    width: 150px;
+    
+    
+}
+.DugmeRezervisi
+{
+    background-color: rgb(218, 137, 187);
+    border-radius: 7px;
+    color: rgb(253, 222, 253);
+    border-style:double;
+    border-color: rgb(221, 68, 68);
+}
+
+.ButtonDelete, .ButtonUpdate, .BtnUpdate, .IzmeniDest, .IzborDest
+{
+    background-color: rgb(238, 118, 192);
+    color: rgb(237, 243, 179);
+    border-style:double;
+    border-color: rgb(68, 211, 221);
+}
+.ButtonDelete, .ButtonUpdate, .BtnUpdate
+{
+    width: 100%;
+    height: auto;
+}
+.IzborDest
+{
+    border-radius: 7px;
+}
+
+.ButtonDelete:hover, .ButtonUpdate:hover, 
+.BtnUpdate:hover, .IzmeniDest:hover, .IzborDest:hover,
+.DugmeRezervisi:hover, .btnRezrvDest:hover
+{
+    background-color: rgb(155, 238, 217);
+    color: rgb(238, 118, 192);
+}
